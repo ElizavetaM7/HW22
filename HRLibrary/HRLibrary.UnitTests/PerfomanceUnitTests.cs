@@ -19,13 +19,13 @@ namespace HRLibrary.UnitTests
             Assert.AreEqual("15.09.2022 19:00", viy.Start);
             Assert.AreEqual("15.29.2022 21:30", viy.Finish);
             Assert.AreEqual("{Finish}-{Start}", viy.Duration);
-            Assert.AreEqual(TypePerfomance.Premiere, viy.Type);
+            Assert.AreEqual(viy.Type);
             Assert.AreEqual("-30%", viy.Discount);
         }
         [Test]
         public void ToString_Perfomance_Title()
         {
-            //var viy = CreateTestPerfomance();
+            var viy = CreateTestPerfomance();
             Assert.AreEqual("Viy", viy.ToString());
         }
         public Perfomance CreateTestPerfomance()

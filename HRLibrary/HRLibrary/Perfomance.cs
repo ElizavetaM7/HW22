@@ -8,11 +8,11 @@ namespace HRLibrary
 {
     public class Perfomance
     {
-        public string Title { get; internal set; }
-        public string Description { get; internal set; }
-        public TimeSpan Start { get; internal set; }
+        public string Title;
+        public string Description;
+        public TimeSpan Start;
         public readonly TimeSpan Finish;
-        public TypePerfomance Type { get; internal set; }
+        public TypePerfomance Type; 
 
         public TimeSpan Duration
         {
@@ -51,11 +51,7 @@ namespace HRLibrary
             }
             Console.WriteLine
                 ($"Продолжительность:{Duration}." +
-                $"Описание:{Description}." +
-                $"Дата и время начала:{Start}." +
-                $"Время окончания:{Finish}." +
-                $"Тип:{Type}." +
-                $"Скидка/Надбавка:{Discount}");
+                $"Описание:{Description}.");
         }
 
 
